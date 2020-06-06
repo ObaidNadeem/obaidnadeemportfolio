@@ -1,0 +1,513 @@
+html,body
+{
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    overflow-x: hidden; 
+    /* box-sizing: border-box; */
+}
+
+.home-page {
+   
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    overflow-x: hidden; 
+
+}
+
+
+.bg-dark {
+    background-color: transparent !important;
+    transition: 0.5s;
+}
+
+
+
+.home-page {
+    width: calc(100%);
+    height: calc(100vh);
+    background-image: url("Website-Design-Background.png");
+    background-color: teal;
+    background-size: 100% 100%;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+/* Fixes dropdown menus placed on the right side */
+.ml-auto .dropdown-menu {
+    left: auto !important;
+    /* right: 0px; */
+}
+
+.nav-link {
+    opacity: 100%;
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 1);
+}
+
+.bg-dark.scrolled {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    transition: 0.5s;
+}
+
+/* .home-page > #signature {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.greetings{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: co; */
+    align-items: center;
+    color: white;
+    font-size: 70px;
+    
+}
+
+.cards {
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    animation: fadeIN ease 20s;
+    height: calc(50vh);
+    color: black;
+}
+
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50vh;
+    animation: fadeIN ease 20s;
+    
+    
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+
+#card_back {
+    display: none; 
+}
+
+.fa-arrow-right{
+    margin-left: 10px;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 25px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: transparent;}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Toggle Animation Start*/
+
+.box {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    position: absolute;
+    top: calc(62% - 0px);
+    left: calc(38% - 0px);   
+    padding: 20px;
+    transition: 1s;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.box_active{
+    width: 600px;
+    height: 320px;
+}
+
+.box .p {
+    font-size: 12px;
+    transition: 0.5s ease;
+    text-align: justify;
+    margin-top: 25px;
+    visibility: hidden;
+}
+
+
+.p_active {
+    transition-delay: 0.5s !important;
+    visibility: visible !important;
+}
+
+
+.toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: #2e80ff;
+    transition: 1s;
+}
+
+.toggle > span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 19px;
+    left: 10px;
+    transition: 1s;
+}
+
+.toggle > span:before{
+    content: '';  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg);
+    background: #fff ;
+    transition: 1s;    
+}
+
+.active {
+    background: red;
+    top: 0;
+    left: calc(100% - 40px);
+    border-radius:50%;
+    transform: scale(.6); 
+
+}
+
+.active span {
+    transform: rotate(225deg);
+
+}
+
+
+/* Toggle Animation End */
+
+.my-work-active {
+    visibility: visible;
+    background: red;
+    top: 0;
+    left: calc(100% - 40px);
+    border-radius:50%;
+    transform: scale(.6); 
+    
+}
+
+
+#info-button{
+    margin-top: 20px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    border: 2px solid white;
+    cursor:pointer;
+    overflow: hidden;
+    transition: all 0.5s;
+    justify-content: center;
+    /*  */
+    /* position: relative; */
+    /* width: 240px;
+    height: 320px; */
+    background-attachment: #fff;
+    /* position: absolute; */
+    
+    padding: 10px;
+    transition: 1s !important;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+
+.info-button-active {
+    margin: 0 !important;
+}
+
+#info-button:hover{
+   
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    border: 2px solid white;
+}
+
+/* Info button 1 */
+#info-button1{
+    margin-top: 20px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    border: 2px solid white;
+    cursor:pointer;
+    overflow: hidden;
+    transition: all 0.5s;
+    justify-content: center;
+    /*  */
+    /* position: relative; */
+    /* width: 240px;
+    height: 320px; */
+    background-attachment: #fff;
+    /* position: absolute; */
+    
+    padding: 10px;
+    transition: 1s !important;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+
+.info-button1-active {
+    margin: 0 !important;
+}
+
+#info-button1:hover{
+   
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    border: 2px solid white;
+}
+
+/* Info Button 2 */
+
+#info-button2{
+    margin-top: 20px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    border: 2px solid white;
+    cursor:pointer;
+    overflow: hidden;
+    transition: all 0.5s;
+    justify-content: center;
+    /*  */
+    /* position: relative; */
+    /* width: 240px;
+    height: 320px; */
+    background-attachment: #fff;
+    /* position: absolute; */
+    
+    padding: 10px;
+    transition: 1s !important;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+
+.info-button2-active {
+    margin: 0 !important;
+}
+
+#info-button2:hover{
+   
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    border: 2px solid white;
+}
+
+/* Box toggle  */
+
+.box-toggle.box-toggle-active{
+    width: 100% !important;
+    height: 100vh !important;
+    position: absolute;
+    top: 0px !important;
+    left: calc(0% - 0px);
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Box toggle 1 */
+
+.box-toggle1.box-toggle-active1{
+    width: 100% !important;
+    height: 100vh !important;
+    position: absolute;
+    top: 0px !important;
+    left: calc(0% - 0px);
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Box toggle 2 */
+
+.box-toggle2.box-toggle-active2{
+    width: 100% !important;
+    height: 100vh !important;
+    position: absolute;
+    top: 0px !important;
+    left: calc(0% - 0px);
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+
+/* Toggle view */
+
+.toggle-view{
+    position: relative;
+    top: -36px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #2e80ff;
+    transition: 1s ease;
+    z-index: 1;
+
+}
+
+.toggle-view span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+/* Toggle view 1 */
+
+.toggle-view1{
+    position: relative;
+    top: -36px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #2e80ff;
+    transition: 1s ease;
+    z-index: 1;
+
+}
+
+.toggle-view1 span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+/* Toggle view 2 */
+
+.toggle-view2{
+    position: relative;
+    top: -36px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #2e80ff;
+    transition: 1s ease;
+    z-index: 1;
+
+}
+
+.toggle-view2 span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+
+.my-work { 
+    width: 100%;
+    height: 100%;
+    /* position: absolute;   */
+    top: -1px;
+    text-align: justify;
+    visibility: hidden;
+    transition: .5s ease;
+}
+
+/* yeh click krne ka baad class add ho rahi ha pehle wali btao */
+.my-work.work-show {      
+    visibility: visible;
+    transition: .5s ease;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.my-work.work-show .cards{
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+}
+
+.toggle-view.view-work-active{
+    background: red;
+    transition: 0.5s ease;
+    top: -30px;
+ 
+    transform: scale(0.7);
+    transform: rotate(180deg);
+    transition: 0.5s ease;
+}
+
+/* Toggle view 1 */
+.toggle-view1.view-work-active1{
+    background: red;
+    transition: 0.5s ease;
+    top: -30px;
+ 
+    transform: scale(0.7);
+    transform: rotate(180deg);
+    transition: 0.5s ease;
+}
+
+/* Toggle view 2 */
+
+.toggle-view2.view-work-active2{
+    background: red;
+    transition: 0.5s ease;
+    top: -30px;
+ 
+    transform: scale(0.7);
+    transform: rotate(180deg);
+    transition: 0.5s ease;
+}
+
+.show-card{ 
+display: block !important;
+}
